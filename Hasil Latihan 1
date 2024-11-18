@@ -1,0 +1,25 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+ RESTART: C:/Users/user/Documents/kuliah upb/Sem 3/Program Komputer/Pertemuan 10/Latihan 1.py 
+Nomor kontak Ari: 08123456789
+Kontak Riko ditambahkan: {'Ari': '08123456789', 'Dina': '08234567890', 'Budi': '08345678901', 'Riko': '087654544'}
+Nomor kontak Dina setelah diubah: 088999776
+Semua Nama dalam daftar kontak:
+Ari
+Dina
+Budi
+Riko
+Semua Nomor dalam daftar kontak:
+08123456789
+088999776
+08345678901
+087654544
+Daftar Nama dan Nomornya:
+Ari: 08123456789
+Dina: 088999776
+Budi: 08345678901
+Riko: 087654544
+Kontak Dina telah dihapus. Daftar kontak sekarang:
+{'Ari': '08123456789', 'Budi': '08345678901', 'Riko': '087654544'}
+>>> 
