@@ -1,0 +1,91 @@
+# Program Daftar Nilai Mahasiswa
+
+# Dictionary untuk menyimpan data mahasiswa
+daftar_nilai = {}
+
+def hitung_nilai_akhir(tugas, uts, uas):
+    return (tugas * 0.3) + (uts * 0.35) + (uas * 0.35)
+
+def tambah_data():
+    nim = input("Masukkan NIM Mahasiswa: ")
+    nama = input("Masukkan Nama Mahasiswa: ")
+    tugas = float(input("Masukkan Nilai Tugas: "))
+    uts = float(input("Masukkan Nilai UTS: "))
+    uas = float(input("Masukkan Nilai UAS: "))
+    
+    nilai_akhir = hitung_nilai_akhir(tugas, uts, uas)
+    daftar_nilai[nim] = {'nama': nama, 'tugas': tugas, 'uts': uts, 'uas': uas, 'nilai_akhir': nilai_akhir}
+    print("Data mahasiswa berhasil ditambahkan.")
+
+def ubah_data():
+    nim = input("Masukkan NIM Mahasiswa yang ingin diubah: ")
+    if nim in daftar_nilai:
+        nama = input("Masukkan Nama Mahasiswa: ")
+        tugas = float(input("Masukkan Nilai Tugas: "))
+        uts = float(input("Masukkan Nilai UTS: "))
+        uas = float(input("Masukkan Nilai UAS: "))
+        
+        nilai_akhir = hitung_nilai_akhir(tugas, uts, uas)
+        daftar_nilai[nim] = {'nama': nama, 'tugas': tugas, 'uts': uts, 'uas': uas, 'nilai_akhir': nilai_akhir}
+        print("Data mahasiswa berhasil diubah.")
+    else:
+        print("NIM tidak ditemukan.")
+
+def hapus_data():
+    nim = input("Masukkan NIM Mahasiswa yang ingin dihapus: ")
+    if nim in daftar_nilai:
+        del daftar_nilai[nim]
+        print("Data mahasiswa berhasil dihapus.")
+    else:
+        print("NIM tidak ditemukan.")
+
+def tampilkan_data():
+    if not daftar_nilai:
+        print("Tidak ada data mahasiswa.")
+    else:
+        # Menampilkan tabel
+        print("\nDaftar Nilai Mahasiswa:")
+        print(f"{'NIM':<15} {'Nama':<20} {'Tugas':<10} {'UTS':<10} {'UAS':<10} {'Nilai Akhir':<15}")
+        print("=" * 80)
+        
+        for nim, data in daftar_nilai.items():
+            print(f"{nim:<15} {data['nama']:<20} {data['tugas']:<10} {data['uts']:<10} {data['uas']:<10} {data['nilai_akhir']:<15.2f}")
+
+def cari_data():
+    nim = input("Masukkan NIM Mahasiswa yang ingin dicari: ")
+    if nim in daftar_nilai:
+        data = daftar_nilai[nim]
+        print(f"NIM: {nim}, Nama: {data['nama']}, Tugas: {data['tugas']}, UTS: {data['uts']}, UAS: {data['uas']}, Nilai Akhir: {data['nilai_akhir']:.2f}")
+    else:
+        print("NIM tidak ditemukan.")
+
+def main():
+    while True:
+        print("\nMenu:")
+        print("1. Tambah Data")
+        print("2. Ubah Data")
+        print("3. Hapus Data")
+        print("4. Tampilkan Data")
+        print("5. Cari Data")
+        print("6. Keluar")
+        
+        pilihan = input("Pilih menu (1-6): ")
+        
+        if pilihan == '1':
+            tambah_data()
+        elif pilihan == '2':
+            ubah_data()
+        elif pilihan == '3':
+            hapus_data()
+        elif pilihan == '4':
+            tampilkan_data()
+        elif pilihan == '5':
+            cari_data()
+        elif pilihan == '6':
+            print("Terima kasih!")
+            break
+        else:
+            print("Pilihan tidak valid. Silakan coba lagi.")
+
+if __name__ == "__main__":
+    main()
