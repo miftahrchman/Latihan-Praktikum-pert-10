@@ -1,0 +1,108 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+ RESTART: C:/Users/user/Documents/kuliah upb/Sem 3/Program Komputer/Pertemuan 10/Praktikum.py 
+
+Menu:
+1. Tambah Data
+2. Ubah Data
+3. Hapus Data
+4. Tampilkan Data
+5. Cari Data
+6. Keluar
+Pilih menu (1-6): 1
+Masukkan NIM Mahasiswa: 65829
+Masukkan Nama Mahasiswa: Azmi
+Masukkan Nilai Tugas: 83
+Masukkan Nilai UTS: 89
+Masukkan Nilai UAS: 90
+Data mahasiswa berhasil ditambahkan.
+
+Menu:
+1. Tambah Data
+2. Ubah Data
+3. Hapus Data
+4. Tampilkan Data
+5. Cari Data
+6. Keluar
+Pilih menu (1-6): 1
+Masukkan NIM Mahasiswa: 65830
+Masukkan Nama Mahasiswa: Ical
+Masukkan Nilai Tugas: 93
+Masukkan Nilai UTS: 89
+Masukkan Nilai UAS: 95
+Data mahasiswa berhasil ditambahkan.
+
+Menu:
+1. Tambah Data
+2. Ubah Data
+3. Hapus Data
+4. Tampilkan Data
+5. Cari Data
+6. Keluar
+Pilih menu (1-6): 1
+Masukkan NIM Mahasiswa: 65831
+Masukkan Nama Mahasiswa: Amar
+Masukkan Nilai Tugas: 85
+Masukkan Nilai UTS: 92
+Masukkan Nilai UAS: 87
+Data mahasiswa berhasil ditambahkan.
+
+Menu:
+1. Tambah Data
+2. Ubah Data
+3. Hapus Data
+4. Tampilkan Data
+5. Cari Data
+6. Keluar
+Pilih menu (1-6): 1
+Masukkan NIM Mahasiswa: 65832
+Masukkan Nama Mahasiswa: Alfat
+Masukkan Nilai Tugas: 83
+Masukkan Nilai UTS: 77
+Masukkan Nilai UAS: 86
+Data mahasiswa berhasil ditambahkan.
+
+Menu:
+1. Tambah Data
+2. Ubah Data
+3. Hapus Data
+4. Tampilkan Data
+5. Cari Data
+6. Keluar
+Pilih menu (1-6): 1
+Masukkan NIM Mahasiswa: 65833
+Masukkan Nama Mahasiswa: Sidiq
+Masukkan Nilai Tugas: 86
+Masukkan Nilai UTS: 81
+Masukkan Nilai UAS: 87
+Data mahasiswa berhasil ditambahkan.
+
+Menu:
+1. Tambah Data
+2. Ubah Data
+3. Hapus Data
+4. Tampilkan Data
+5. Cari Data
+6. Keluar
+Pilih menu (1-6): 4
+
+Daftar Nilai Mahasiswa:
+NIM             Nama                 Tugas      UTS        UAS        Nilai Akhir    
+================================================================================
+65829           Azmi                 83.0       89.0       90.0       87.55          
+65830           Ical                 93.0       89.0       95.0       92.30          
+65831           Amar                 85.0       92.0       87.0       88.15          
+65832           Alfat                83.0       77.0       86.0       81.95          
+65833           Sidiq                86.0       81.0       87.0       84.60          
+
+Menu:
+1. Tambah Data
+2. Ubah Data
+3. Hapus Data
+4. Tampilkan Data
+5. Cari Data
+6. Keluar
+Pilih menu (1-6): 6
+Terima kasih!
+>>> 
